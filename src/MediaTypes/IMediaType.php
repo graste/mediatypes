@@ -8,15 +8,23 @@ namespace MediaTypes;
 interface IMediaType
 {
     public function getName();
-    public function getTitle();
     public function getTemplate();
+
     public function getType();
     public function getSubType();
-    public function getRequiredParameters();
+    public function getSuffix();
+
     public function getOptionalParameters();
+    public function getRequiredParameters();
+
     public function getFileExtensions();
-    public function getDescription();
+
+    public function getTitle();
     public function getAbstract();
+    public function getDescription();
     public function getReferences();
+
+    public function getEncodingConsiderations();
+    public function getSecurityConsiderations();
 }
 
